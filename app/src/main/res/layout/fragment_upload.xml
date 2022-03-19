@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UploadFragment">
+
+    <ImageView
+        android:id="@+id/bgU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-120sp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/ready_to_share_your_pitch_with_the_world"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etOverview"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bgU"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-73dp"
+        android:background="@color/white"
+        android:fontFamily="casual"
+        android:hint="Basic Overview of your idea" />
+
+    <EditText
+        android:id="@+id/etIdeaDescription"
+        android:layout_width="320dp"
+        android:gravity="start"
+        android:layout_height="100dp"
+        android:layout_below="@id/etOverview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="casual"
+        android:hint="Descrieb your idea." />
+
+    <ImageView
+        android:id="@+id/ivUpload"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnUpload"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/video" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:text="Upload"
+        android:textSize="22dp"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
