@@ -25,17 +25,6 @@
         android:layout_below="@id/who"
         android:src="@drawable/oval" />
 
-    <TextView
-        android:id="@+id/tvShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/who"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="110sp"
-        android:text="@string/share_inspire_connect"
-        android:textColor="@color/appTheme"
-        android:textSize="15sp" />
-
     <ImageView
         android:id="@+id/pic"
         android:layout_width="160dp"
@@ -63,12 +52,12 @@
         android:id="@+id/btnInvestor"
         android:layout_width="190sp"
         android:layout_height="wrap_content"
+        android:layout_above="@id/tvUnsure"
         android:layout_centerVertical="true"
         android:layout_marginStart="180sp"
+        android:layout_marginBottom="160dp"
         android:background="@drawable/button_bg"
         android:text="@string/investor"
-        android:layout_above="@id/tvUnsure"
-        android:layout_marginBottom="160dp"
         android:textSize="20sp"
         android:textStyle="bold" />
 
