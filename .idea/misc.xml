@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/drawable/button_bg.xml" value="0.15069444444444444" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.1569078947368421" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/drawable/secondscreenbg.xml" value="0.1569078947368421" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/drawable/shapebg.xml" value="0.15069444444444444" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/layout/activity_home_page.xml" value="0.13782894736842105" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/layout/activity_main.xml" value="0.14671052631578949" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/layout/custom_chat_item.xml" value="0.14671052631578949" />
         <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/layout/fragment_chat.xml" value="0.14671052631578949" />
+        <entry key="..\:/Users/abans/AndroidStudioProjects/PG/app/src/main/res/layout/fragment_profile.xml" value="0.14671052631578949" />
       </map>
     </option>
   </component>
