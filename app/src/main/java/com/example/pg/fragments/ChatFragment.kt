@@ -55,25 +55,23 @@ class ChatFragment : Fragment() {
         recyclerViewChats?.layoutManager = GridLayoutManager(requireContext(), 1)
         recyclerViewChats?.adapter = chatAdapter
 
-        /*  Dummy Items
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-//        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
-         */
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
+        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "08 bje"))
 
         return layout
     }
