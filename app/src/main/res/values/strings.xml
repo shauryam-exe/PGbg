@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PG</string>
+    <string name="share_inspire_connect">SHARE - INSPIRE - CONNECT</string>
+    <string name="unsure_about_where">UNSURE ABOUT WHERE</string>
+    <string name="you_fit_in">YOU FIT IN?</string>
+    <string name="explore_now">explore now</string>
+    <string name="investor">Investor</string>
+    <string name="founder">Founder</string>
+    <string name="who_are_you">WHO ARE YOU?</string>
+</resources>
