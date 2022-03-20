@@ -7,14 +7,17 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.example.pg.model.LoginInfo
+import kotlin.math.sign
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var signInButton: Button
     lateinit var usernameInput: EditText
     lateinit var passwordInput: EditText
+    lateinit var signUp: TextView
 
     companion object {
         const val INTENT_KEY = "key"
@@ -27,7 +30,11 @@ class LoginActivity : AppCompatActivity() {
         signInButton = findViewById(R.id.signInButton)
         usernameInput = findViewById(R.id.emailEditText)
         passwordInput = findViewById(R.id.passwordEditText)
+        signUp = findViewById(R.id.signUpTextView)
 
+        signUp.setOnClickListener {
+            startActivity(Intent(this, SignupActivity::class.java))
+        }
 
         signInButton.setOnClickListener {
             val username = usernameInput.text.toString()

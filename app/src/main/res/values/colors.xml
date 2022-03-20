@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiteG">#FBFBFB</color>
+    <color name="grey">#EBE9E9</color>
     <color name="appThemeP">#4E4ECA</color>
     <color name="appThemePB">#874EEC</color>
 <!--    <color name="appTheme">#5757cb</color>-->
