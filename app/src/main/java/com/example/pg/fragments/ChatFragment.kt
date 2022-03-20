@@ -55,14 +55,14 @@ class ChatFragment : Fragment() {
         recyclerViewChats?.layoutManager = GridLayoutManager(requireContext(), 1)
         recyclerViewChats?.adapter = chatAdapter
 
-        chatList?.add(Chat("default", "Ankit", "Do some work dude!!", "2:30 pm"))
-        chatList?.add(Chat("default", "Shauryam", "Okay!!", "6:00 pm"))
-        chatList?.add(Chat("default", "Yash", "It was not nice talking to you bruh :(", "6:39 pm"))
-        chatList?.add(Chat("default", "Shobhit", "Found anyone?", "8:00 pm"))
-        chatList?.add(Chat("default", "Bhumika", "Sexy UI gurl!!", "8:04 pm"))
-        chatList?.add(Chat("default", "Akshat", "When to submit?", "9:00 pm"))
-        chatList?.add(Chat("default", "Bhumika", "Sorry for being unavailable :|", "18 Mar"))
-        chatList?.add(Chat("default", "BlaBlaBla", "Aur bhai kaisa hai?", "17 Mar"))
+        chatList?.add(Chat("a", "Ankit", "Do some work dude!!", "2:30 pm"))
+        chatList?.add(Chat("s", "Shauryam", "Okay!!", "6:00 pm"))
+        chatList?.add(Chat("y", "Yash", "It was not nice talking to you bruh :(", "6:39 pm"))
+        chatList?.add(Chat("s", "Shobhit", "Found anyone?", "8:00 pm"))
+        chatList?.add(Chat("b", "Bhumika", "Sexy UI gurl!!", "8:04 pm"))
+        chatList?.add(Chat("a", "Akshat", "When to submit?", "9:00 pm"))
+        chatList?.add(Chat("b", "Bhumika", "Sorry for being unavailable :|", "18 Mar"))
+        chatList?.add(Chat("b", "BlaBlaBla", "Aur bhai kaisa hai?", "17 Mar"))
 
         return layout
     }
