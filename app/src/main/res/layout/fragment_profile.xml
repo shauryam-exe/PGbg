@@ -67,6 +67,7 @@
         android:textSize="15sp" />
 
     <LinearLayout
+        android:id="@+id/lLayout"
         android:layout_margin="10sp"
         android:weightSum="2"
         android:orientation="horizontal"
@@ -98,5 +99,23 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPitches"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:tag="gone"
+        android:layout_below="@id/lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInvestments"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:tag="gone"
+        android:layout_below="@id/lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
