@@ -3,6 +3,7 @@ package com.example.pg
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -31,7 +32,11 @@ class LoginActivity : AppCompatActivity() {
         signInButton.setOnClickListener {
             val username = usernameInput.text.toString()
             val password = passwordInput.text.toString()
-            authenticateUser(username, password)
+            if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
+                Toast.makeText(this, "Fill all credentials.", Toast.LENGTH_SHORT).show()
+            } else {
+                authenticateUser(username, password)
+            }
         }
     }
 
