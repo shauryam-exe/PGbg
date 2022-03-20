@@ -13,7 +13,7 @@ class HomePageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, ChatFragment()).commit()
 
     }
 }

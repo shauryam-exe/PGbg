@@ -37,13 +37,13 @@
 
     <TextView
         android:id="@+id/shareText"
-        android:textColor="@color/appTheme"
-        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/bg"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="-90dp"
         android:text="@string/share_inspire_connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="@color/appTheme" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,7 +71,9 @@
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/et"
-            android:hint="    Name"
+            android:hint="Name"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:inputType="text"
             android:maxLines="1"
             android:textSize="14sp" />
@@ -92,7 +94,9 @@
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/et"
-            android:hint="    Username"
+            android:hint="Username"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:inputType="text"
             android:maxLines="1"
             android:textSize="14sp" />
@@ -114,7 +118,9 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/et"
             android:ems="10"
-            android:hint="    Email"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:textSize="14sp" />
 
@@ -158,9 +164,11 @@
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/et"
-            android:hint="    Password"
+            android:hint="Password"
             android:inputType="textPassword"
             android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:textSize="14sp" />
 
         <TextView
@@ -179,9 +187,11 @@
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/et"
-            android:hint="    *********"
+            android:hint="*********"
             android:inputType="textPassword"
             android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:textSize="14sp" />
 
     </LinearLayout>
