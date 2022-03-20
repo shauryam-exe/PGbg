@@ -44,7 +44,7 @@
         android:background="@drawable/edit_text_round"
         android:fontFamily="casual"
         android:gravity="start"
-        android:hint="Descrieb your idea." />
+        android:hint="Describe your idea." />
 
     <ImageView
         android:id="@+id/ivUpload"
