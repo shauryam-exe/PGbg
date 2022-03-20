@@ -40,7 +40,7 @@
             android:paddingEnd="5dp"
             android:paddingTop="5dp"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             />
     </LinearLayout>
@@ -51,17 +51,33 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="30dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="2">
         <TextView
             android:id="@+id/nameOnVideoTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:paddingTop="5dp"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            />
+        <TextView
+            android:id="@+id/askOnVideoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             android:textStyle="bold"
             />
     </LinearLayout>

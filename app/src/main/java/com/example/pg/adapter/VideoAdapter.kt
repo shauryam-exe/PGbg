@@ -1,8 +1,11 @@
 package com.example.pg.adapter
 
+import android.content.Context
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.VideoView
@@ -25,7 +28,7 @@ class VideoAdapter(val videoItems: List<VideoItem>) :
     }
 
     override fun onBindViewHolder(holder: VideoViewHolder, position: Int) {
-        holder.setVideoData(videoItems.get(position))
+        holder.setVideoData(videoItems[position])
     }
 
     override fun getItemCount(): Int {
@@ -37,10 +40,13 @@ class VideoAdapter(val videoItems: List<VideoItem>) :
         val progressBar = itemView.findViewById<ProgressBar>(R.id.videoProgressBar)
         val userNameTextView = itemView.findViewById<TextView>(R.id.nameOnVideoTextView)
         val ideaNameTextView = itemView.findViewById<TextView>(R.id.ideaNameVideoTextView)
+        val askTextView = itemView.findViewById<TextView>(R.id.askOnVideoTextView)
 
         fun setVideoData(videoData: VideoItem) {
-            userNameTextView.setText(videoData.userName)
-            ideaNameTextView.setText(videoData.ideaName)
+            userNameTextView.text = videoData.userName
+            ideaNameTextView.text = videoData.ideaName
+            askTextView.text = videoData.ask
+
             videoView.setVideoPath(videoData.videoURL)
 
             videoView.setOnPreparedListener() {

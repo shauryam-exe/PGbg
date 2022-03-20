@@ -47,23 +47,25 @@ class HomeFragment : Fragment() {
 
         var videoItems = arrayListOf<VideoItem>()
         val videoItem1 = VideoItem()
-        videoItem1.videoURL = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
-        videoItem1.ideaName = "Just Testing ViewPager2"
-        videoItem1.userName = "Osama Bin Laden"
+        videoItem1.videoURL = "https://res.cloudinary.com/demo/video/upload/dog.mp4"
+        videoItem1.ideaName = "Stark Stinger Missile"
+        videoItem1.userName = "Howard Stark"
+        videoItem1.ask = "45 Lacs"
         videoItems.add(videoItem1)
 
         val videoItem2 = VideoItem()
-        videoItem2.videoURL = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
-        videoItem2.ideaName = "Boooom"
-        videoItem2.userName = "Dawood Ibrahim"
+        videoItem2.videoURL = "https://res.cloudinary.com/demo/video/upload/q_50/cat.mp4"
+        videoItem2.ideaName = "Vibranium Shield"
+        videoItem2.userName = "Steve Rogers"
+        videoItem2.ask = "80Lacs"
         videoItems.add(videoItem2)
 
         val videoItem3 = VideoItem()
-        videoItem3.videoURL = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-        videoItem3.ideaName = "26/11"
-        videoItem3.userName = "Jihadi"
+        videoItem3.videoURL = "https://res.cloudinary.com/demo/video/upload/w_600/q_auto:low/hourglass_timer.mp4"
+        videoItem3.ideaName = "Flying Aircraft Carriers"
+        videoItem3.userName = "Nick Fury"
+        videoItem3.ask = "1.75 Crore"
         videoItems.add(videoItem3)
-
 
 
         videoViewPager.adapter = VideoAdapter(videoItems)
