@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-120sp"
+        android:layout_marginTop="-125sp"
         android:src="@drawable/profile" />
 
     <de.hdodenhof.circleimageview.CircleImageView
