@@ -54,7 +54,7 @@ class HomeFragment : Fragment() {
         videoItems.add(videoItem1)
 
         val videoItem2 = VideoItem()
-        videoItem2.videoURL = "https://res.cloudinary.com/demo/video/upload/q_50/cat.mp4"
+        videoItem2.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/w_600/q_auto:low/v1647785200/VID-20210911-WA0025_ret3df.mp4"
         videoItem2.ideaName = "Vibranium Shield"
         videoItem2.userName = "Steve Rogers"
         videoItem2.ask = "80Lacs"
