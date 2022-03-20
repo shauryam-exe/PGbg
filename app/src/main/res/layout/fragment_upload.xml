@@ -30,20 +30,20 @@
         android:layout_below="@id/bgU"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-73dp"
-        android:background="@color/white"
+        android:background="@drawable/edit_text_round"
         android:fontFamily="casual"
         android:hint="Basic Overview of your idea" />
 
     <EditText
         android:id="@+id/etIdeaDescription"
         android:layout_width="320dp"
-        android:gravity="start"
         android:layout_height="100dp"
         android:layout_below="@id/etOverview"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@color/white"
+        android:background="@drawable/edit_text_round"
         android:fontFamily="casual"
+        android:gravity="start"
         android:hint="Descrieb your idea." />
 
     <ImageView

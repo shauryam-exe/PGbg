@@ -32,7 +32,7 @@
         android:layout_below="@id/tvChats"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15sp"
-        android:background="@color/appTheme" />
+        android:background="@drawable/edit_text_round" />
 
     <ImageView
         android:id="@+id/shape"
