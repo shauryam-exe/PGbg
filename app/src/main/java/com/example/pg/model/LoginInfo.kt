@@ -3,7 +3,7 @@ package com.example.pg.model
 import android.util.Log
 
 object LoginInfo {
-    val users = listOf(Pair("yash","password"),Pair("ankit","ankit"),Pair("1","1"))
+    val users = listOf(Pair("yash","password"),Pair("ankit","ankit"),Pair("a","a"))
 
     fun searchUser(name: String, password: String): Boolean {
         Log.d("check","User Working !!!")
