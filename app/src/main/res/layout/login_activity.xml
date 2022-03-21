@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     android:background="#F6F8FF">
 
-    <TextView
-        android:id="@+id/continueText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="64dp"
-        android:text="Don't have an account?"
-        android:textStyle="bold"
+    <ProgressBar
+        android:id="@+id/signInProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        android:padding="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/video_text_round"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -139,18 +140,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/continueText" />
 
+
     <TextView
+        android:id="@+id/continueText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:text="Don't have an account?"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton" />
+
+    <Button
         android:id="@+id/signUpTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:text="Sign up"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="6dp"
         android:layout_marginStart="10dp"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textColor="#4584FE"
-        app:layout_constraintStart_toEndOf="@+id/continueText2"
-        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton" />
+        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton"
+        app:layout_constraintStart_toEndOf="@+id/continueText2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
