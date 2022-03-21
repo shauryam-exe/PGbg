@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import android.widget.ToggleButton
+import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.pg.R
 import com.example.pg.adapter.VideoAdapter
@@ -25,6 +28,8 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    lateinit var videoViewPager: ViewPager2
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -43,27 +48,28 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val videoViewPager = view.findViewById<ViewPager2>(R.id.videoViewPager)
+
+        videoViewPager = view.findViewById(R.id.videoViewPager)
 
         var videoItems = arrayListOf<VideoItem>()
         val videoItem1 = VideoItem()
-        videoItem1.videoURL = "https://res.cloudinary.com/demo/video/upload/dog.mp4"
-        videoItem1.ideaName = "Stark Stinger Missile"
+        videoItem1.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647809475/WhatsApp_Video_2022-03-21_at_1.56.14_AM_qwnrg7.mp4"
+        videoItem1.ideaName = "JobZ"
         videoItem1.userName = "Howard Stark"
         videoItem1.ask = "45 Lacs"
         videoItems.add(videoItem1)
 
         val videoItem2 = VideoItem()
-        videoItem2.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/w_600/q_auto:low/v1647785200/VID-20210911-WA0025_ret3df.mp4"
-        videoItem2.ideaName = "Vibranium Shield"
-        videoItem2.userName = "Steve Rogers"
+        videoItem2.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647809456/WhatsApp_Video_2022-03-21_at_1.56.28_AM_y0mydf.mp4"
+        videoItem2.ideaName = "Timberly"
+        videoItem2.userName = "Sarah Baker"
         videoItem2.ask = "80Lacs"
         videoItems.add(videoItem2)
 
         val videoItem3 = VideoItem()
-        videoItem3.videoURL = "https://res.cloudinary.com/demo/video/upload/w_600/q_auto:low/hourglass_timer.mp4"
-        videoItem3.ideaName = "Flying Aircraft Carriers"
-        videoItem3.userName = "Nick Fury"
+        videoItem3.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647809422/WhatsApp_Video_2022-03-21_at_1.56.29_AM_qywt94.mp4"
+        videoItem3.ideaName = "FurSpace"
+        videoItem3.userName = "Tom Holland"
         videoItem3.ask = "1.75 Crore"
         videoItems.add(videoItem3)
 
@@ -73,13 +79,8 @@ class HomeFragment : Fragment() {
     }
 
     companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance(): HomeFragment {
+            return HomeFragment()
+        }
     }
 }

@@ -2,19 +2,18 @@ package com.example.pg.adapter
 
 import android.content.Context
 import android.net.Uri
+import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.MediaController
-import android.widget.ProgressBar
-import android.widget.TextView
-import android.widget.VideoView
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pg.R
 import com.example.pg.model.VideoItem
+import kotlin.random.Random
 
 
-class VideoAdapter(val videoItems: List<VideoItem>) :
+class VideoAdapter(val videoItems: ArrayList<VideoItem>) :
     RecyclerView.Adapter<VideoAdapter.VideoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoViewHolder {
@@ -41,11 +40,22 @@ class VideoAdapter(val videoItems: List<VideoItem>) :
         val userNameTextView = itemView.findViewById<TextView>(R.id.nameOnVideoTextView)
         val ideaNameTextView = itemView.findViewById<TextView>(R.id.ideaNameVideoTextView)
         val askTextView = itemView.findViewById<TextView>(R.id.askOnVideoTextView)
+        val likeTextView = itemView.findViewById<TextView>(R.id.likeTextView)
+        val likeButton = itemView.findViewById<ToggleButton>(R.id.likeButton)
+
 
         fun setVideoData(videoData: VideoItem) {
+
             userNameTextView.text = videoData.userName
             ideaNameTextView.text = videoData.ideaName
-            askTextView.text = videoData.ask
+            askTextView.text = "Ask : " + videoData.ask
+            var likes = (3..15).random()
+            likeTextView.text = likes.toString()
+
+            likeButton.setOnClickListener {
+                likes++
+                likeTextView.text = likes.toString()
+            }
 
             videoView.setVideoPath(videoData.videoURL)
 
@@ -64,11 +74,10 @@ class VideoAdapter(val videoItems: List<VideoItem>) :
                 }
 
             }
-
             videoView.setOnCompletionListener {
                 it.start()
             }
         }
-    }
 
+    }
 }

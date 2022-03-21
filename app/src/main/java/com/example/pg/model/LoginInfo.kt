@@ -3,10 +3,20 @@ package com.example.pg.model
 import android.util.Log
 
 object LoginInfo {
-    val users = arrayListOf(Pair("yash","password"),Pair("ankit","ankit"),Pair("a","a"))
+    val users = arrayListOf(Pair("yash","yash"),
+        Pair("ankit","ankit"),
+        Pair("bhumika","bhumika"),
+        Pair("shobhit","shobhit"),
+        Pair("akshat","akshat")
+    )
+
+
     val userInfo = arrayListOf(
         arrayOf("yash","Web Developer","20yo | Guitarist and Musician | Web Developer in the making"),
-        arrayOf("ankit","Software Engineer","19yo | Football is Love | Enthusiastic Coder")
+        arrayOf("ankit","Software Engineer","19yo | Football is Love | Enthusiastic Coder"),
+        arrayOf("bhumika", "UI/UX Developer","19yo | Sketching and Designing UIs"),
+        arrayOf("shobhit","ML Developer","20yo | Like to develop and train ML models"),
+        arrayOf("akshat","Sr Android Developer","20yo | Cricket is my hobby, Android is my passion")
     )
 
     fun searchUser(name: String, password: String): Boolean {

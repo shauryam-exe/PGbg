@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.UploadFragment">
+
 
     <ImageView
         android:id="@+id/bgU"
@@ -11,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="-130sp"
-        android:src="@drawable/profile" />
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="match_parent"
@@ -21,51 +24,73 @@
         android:text="@string/ready_to_share_your_pitch_with_the_world"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etOverview"
+        android:id="@+id/ideaNameTextView"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/bgU"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-73dp"
+        android:layout_marginTop="-100dp"
         android:background="@drawable/edit_text_round"
         android:fontFamily="casual"
-        android:hint="Basic Overview of your idea" />
+        android:hint="Name of you idea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgU" />
 
     <EditText
-        android:id="@+id/etIdeaDescription"
+        android:id="@+id/askUploadTextView"
         android:layout_width="320dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/etOverview"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bgU"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_round"
+        android:fontFamily="casual"
+        android:hint="Your ask for investment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ideaNameTextView" />
+
+    <EditText
+        android:id="@+id/ideaDescriptionTextView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ideaNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edit_text_round"
         android:fontFamily="casual"
         android:gravity="start"
-        android:hint="Describe your idea." />
-
-    <ImageView
-        android:id="@+id/ivUpload"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/btnUpload"
-        android:layout_marginTop="-20dp"
-        android:layout_marginBottom="-20dp"
-        android:src="@drawable/video" />
+        android:hint="Describe your idea."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askUploadTextView" />
 
     <Button
-        android:id="@+id/btnUpload"
+        android:id="@+id/videoSelectButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/button_bg"
-        android:text="Upload"
-        android:textSize="22dp" />
+        android:text="upload"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+    <VideoView
+        android:id="@+id/uploadVideoView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoSelectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ideaDescriptionTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

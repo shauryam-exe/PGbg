@@ -22,6 +22,7 @@ class HomePageActivity : AppCompatActivity() {
     lateinit var addButton : FloatingActionButton
     private var selectorFragment: Fragment? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
