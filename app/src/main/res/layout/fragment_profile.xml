@@ -22,19 +22,20 @@
         android:layout_width="100dp"
         android:layout_height="100dp" />
 
-    <ImageView
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBioFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-110dp"
-        android:layout_marginStart="235dp"
         android:layout_below="@id/bg"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="300dp"
         android:src="@drawable/ic_baseline_add_circle_24" />
 
     <TextView
         android:id="@+id/nameProfile"
-        android:text="Jai Shree Ram!!"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:padding="5dp"
         android:textAllCaps="true"
         android:layout_below="@id/imageProfile"
         android:textColor="@color/black"
@@ -44,25 +45,26 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/whoProfile"
+        android:id="@+id/designationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:layout_below="@id/nameProfile"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
-        android:text="Vishnu Avtar"
         android:textAllCaps="true"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/aboutProfile"
+        android:id="@+id/bioTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/whoProfile"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_below="@id/designationTextView"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10sp"
-        android:text="Seetapati | Dashrath putra | Ayodhyapati"
         android:textAllCaps="true"
         android:textSize="15sp" />
 
@@ -71,7 +73,7 @@
         android:layout_margin="10sp"
         android:weightSum="2"
         android:orientation="horizontal"
-        android:layout_below="@id/aboutProfile"
+        android:layout_below="@id/bioTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 

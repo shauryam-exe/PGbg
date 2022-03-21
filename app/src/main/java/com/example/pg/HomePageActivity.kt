@@ -26,6 +26,8 @@ class HomePageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
+
+
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
         bottomNavigationView = findViewById(R.id.bottomnavigationbar)
         addButton = findViewById(R.id.fab)

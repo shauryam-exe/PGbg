@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import com.example.pg.model.User
 
 class MyselfActivity : AppCompatActivity() {
 
@@ -17,6 +18,7 @@ class MyselfActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_myself)
         username = intent.getStringExtra(LoginActivity.INTENT_KEY)!!
+        User.name = username
 
         founderButton = findViewById(R.id.btnFounder)
         investorButton = findViewById(R.id.btnInvestor)
