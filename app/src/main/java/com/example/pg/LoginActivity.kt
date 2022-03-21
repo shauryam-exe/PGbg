@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var signInButton: Button
     lateinit var usernameInput: EditText
     lateinit var passwordInput: EditText
-    lateinit var signUp: Button
+    lateinit var signUp: TextView
     lateinit var progressBar: ProgressBar
 
     companion object {

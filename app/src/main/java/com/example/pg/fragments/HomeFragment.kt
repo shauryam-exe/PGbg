@@ -1,6 +1,7 @@
 package com.example.pg.fragments
 
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -63,7 +64,7 @@ class HomeFragment : Fragment() {
         videoItem2.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647809456/WhatsApp_Video_2022-03-21_at_1.56.28_AM_y0mydf.mp4"
         videoItem2.ideaName = "Timberly"
         videoItem2.userName = "Sarah Baker"
-        videoItem2.ask = "80Lacs"
+        videoItem2.ask = "80 Lacs"
         videoItems.add(videoItem2)
 
         val videoItem3 = VideoItem()
@@ -73,6 +74,26 @@ class HomeFragment : Fragment() {
         videoItem3.ask = "1.75 Crore"
         videoItems.add(videoItem3)
 
+        val videoItem4 = VideoItem()
+        videoItem4.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647833366/1_Minute_Sales_Pitch_mom4l1.mp4"
+        videoItem4.ideaName = "Sugar Cosmetics"
+        videoItem4.userName = "Jenifer"
+        videoItem4.ask = "65 Lacs"
+        videoItems.add(videoItem4)
+
+        val videoItem5 = VideoItem()
+        videoItem5.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647833812/Selling_strategically_one-minute_sales_pitch_pqueew.mp4"
+        videoItem5.ideaName = "SafeZ"
+        videoItem5.userName = "Lara Lopez"
+        videoItem5.ask = "58 Lacs"
+        videoItems.add(videoItem5)
+
+        val videoItem6 = VideoItem()
+        videoItem6.videoURL = "https://res.cloudinary.com/dz9lxwqgj/video/upload/v1647834014/1_minute_sales_pitch_1_cqytva.mp4"
+        videoItem6.ideaName = "Turkey's Fried"
+        videoItem6.userName = "Mark Wood"
+        videoItem6.ask = "88 Lacs"
+        videoItems.add(videoItem6)
 
         videoViewPager.adapter = VideoAdapter(videoItems)
 
