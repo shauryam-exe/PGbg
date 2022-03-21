@@ -45,13 +45,14 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Fill all credentials.", Toast.LENGTH_SHORT).show()
             } else {
                 authenticateUser(username, password)
+
             }
         }
     }
 
     private fun authenticateUser(username: String, password: String) {
-        progressBar.visibility = View.VISIBLE
         if (LoginInfo.searchUser(username, password)) {
+            progressBar.visibility = View.VISIBLE
             val timer = object : CountDownTimer(2000,1000) {
                 override fun onTick(p0: Long) {
 
@@ -60,6 +61,8 @@ class LoginActivity : AppCompatActivity() {
                 override fun onFinish() {
                     progressBar.visibility = View.GONE
                     showMainActivity(username)
+                    usernameInput.text.clear()
+                    passwordInput.text.clear()
                 }
             }.start()
         }
