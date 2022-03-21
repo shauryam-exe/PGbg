@@ -2,16 +2,13 @@ package com.example.pg
 
 import android.content.Intent
 import android.widget.FrameLayout
-import com.example.pg.fragments.ChatFragment
-import com.example.pg.fragments.HomeFragment
-import com.example.pg.fragments.ProfileFragment
-import com.example.pg.fragments.UploadFragment
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 import android.os.Bundle
 import android.view.MenuItem
+import com.example.pg.fragments.*
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -48,7 +45,7 @@ class HomePageActivity : AppCompatActivity() {
                     selectorFragment = ChatFragment()
                 }
                 R.id.notificationNav -> {
-                    selectorFragment = ChatFragment()
+                    selectorFragment = NotificationFragment()
                 }
                 R.id.profileNav -> {
                     selectorFragment = ProfileFragment()
